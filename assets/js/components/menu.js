@@ -24,7 +24,7 @@ menuTemplate.innerHTML = `
          <section class="menu-desktop__logo">
             <a href="/index.html">
                <div class="menu-desktop__logo--icon">
-                  <img src="/assets/ico/neva-logo.ico" alt="Code Neva Logo" />
+                  <img src="./assets/ico/neva-logo.ico" alt="Code Neva Logo" />
                </div>
                <h2 class="menu-desktop__logo--text">Code <span>Neva</span></h2>
             </a>
