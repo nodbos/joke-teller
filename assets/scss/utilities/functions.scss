@@ -1,0 +1,29 @@
+/*-------------------- Functions ---------------------*/
+@mixin transition($property, $time, $type) {
+   -webkit-transition: $property $time $type;
+   -moz-transition: $property $time $type;
+   -ms-transition: $property $time $type;
+   -o-transition: $property $time $type;
+   transition: $property $time $type;
+}
+@mixin filter($filters...) {
+   -webkit-filter: $filters;
+   -moz-filter: $filters;
+   -ms-filter: $filters;
+   -o-filter: $filters;
+   filter: $filters;
+}
+@mixin rotate($degrees) {
+   -webkit-transform: rotate(#{$degrees}deg);
+   -moz-transform: rotate(#{$degrees}deg);
+   -ms-transform: rotate(#{$degrees}deg);
+   -o-transform: rotate(#{$degrees}deg);
+   transform: rotate(#{$degrees}deg);
+}
+@mixin box-shadow($shadow...) {
+   -webkit-box-shadow: $shadow;
+   -moz-box-shadow: $shadow;
+   -ms-box-shadow: $shadow;
+   -o-box-shadow: $shadow;
+   box-shadow: $shadow;
+}

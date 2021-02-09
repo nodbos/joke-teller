@@ -1,0 +1,93 @@
+/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
+@import 'utilities/variables.scss';
+@import 'utilities/functions.scss';
+@import 'utilities/media-queries.scss';
+/*------------------------ Universal Reset ------------------------*/
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   vertical-align: baseline;
+   background: transparent;
+   box-sizing: border-box;
+}
+/*------------------------ General ------------------------*/
+html {
+   box-sizing: border-box;
+}
+body {
+   margin: 0;
+   min-height: 100vh;
+   background: #45badd;
+   font-family: $font-family;
+   color: $color-white;
+   padding: 1rem $margin-lateral;
+   @include mobile {
+      padding: 0 $margin-lateral/2;
+   }
+   &::-webkit-scrollbar {
+      width: 0.25rem;
+   }
+   &::-webkit-scrollbar-track {
+      background: lighten($color-black, 10%);
+   }
+   &::-webkit-scrollbar-thumb {
+      background: $color-primary;
+   }
+   header {
+      padding-top: unset;
+      padding-bottom: unset;
+   }
+   a,
+   button {
+      cursor: pointer;
+      outline: none;
+      font-family: $font-family;
+   }
+}
+.main {
+   .joke__container {
+      width: 85vw;
+      height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url(/assets/gif/robot.gif);
+      background-size: contain;
+      background-position: left center;
+      background-repeat: no-repeat;
+      @include mobile {
+         background-size: cover;
+         background-position: center center;
+      }
+      #joke__button {
+         width: 12rem;
+         height: 3rem;
+         font-size: 1.5rem;
+         color: $color-white;
+         background: #ff3482;
+         border: none;
+         border-radius: 0.5rem;
+         @include box-shadow(0.1rem 0.1rem 1.5rem 0.5rem rgba(0, 0, 0, 0.2));
+         @include mobile {
+            @include box-shadow(0.1rem 0.1rem 1.5rem 0.5rem rgba(0, 0, 0, 0.5));
+         }
+         &:hover {
+            @include filter(brightness(95%));
+         }
+         &:active {
+            transform: scale(0.98);
+         }
+         &:disabled {
+            cursor: default;
+            @include filter(brightness(30%));
+         }
+      }
+   }
+}
+@import 'components/menu/menu-desktop.scss';
+@import 'components/menu/menu-mobile.scss';
+@import 'components/menu/menu-mobile-button.scss';
+@import 'components/footer.scss';

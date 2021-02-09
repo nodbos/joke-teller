@@ -1,0 +1,61 @@
+/*------------------------ Mobile Menu Button ------------------------*/
+.menu-mobile__btn {
+   color: $color-white;
+   margin-top: -5%;
+   @include tablet {
+      display: none;
+   }
+   .menu-mobile__icon {
+      width: $mobile-icon-size * 3;
+      height: $mobile-icon-size;
+      position: relative;
+      z-index: 300;
+      cursor: pointer;
+
+      @include rotate(0);
+      @include transition(transform, 0.5s, ease-in-out);
+      span {
+         display: block;
+         position: absolute;
+         height: $mobile-icon-size/3;
+         width: 100%;
+         background: $color-white;
+         border-radius: 1rem;
+         opacity: 1;
+         left: 0;
+
+         @include rotate(0);
+         @include transition(transform, 0.25s, ease-in-out);
+         &:nth-child(1) {
+            top: 0;
+         }
+         &:nth-child(2),
+         &:nth-child(3) {
+            top: $mobile-icon-size;
+         }
+         &:nth-child(4) {
+            top: $mobile-icon-size * 2;
+         }
+      }
+      &.menu-mobile__icon--open {
+         span {
+            &:nth-child(1) {
+               top: $mobile-icon-size;
+               width: 0%;
+               left: 50%;
+            }
+            &:nth-child(2) {
+               @include rotate(45);
+            }
+            &:nth-child(3) {
+               @include rotate(-45);
+            }
+            &:nth-child(4) {
+               top: $mobile-icon-size;
+               width: 0%;
+               left: 50%;
+            }
+         }
+      }
+   }
+}

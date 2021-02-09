@@ -1,0 +1,434 @@
+/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
+/*------------------------ Variables ------------------------*/
+/*-------------------- Functions ---------------------*/
+/*-------------------- Media Query ---------------------*/
+/*------------------ Mobile to Tablet ------------------*/
+/*------------------ Tablet to Desktop ------------------*/
+/*------------------------ Universal Reset ------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*------------------------ General ------------------------*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #45badd;
+  font-family: "Roboto", Courier, monospace, sans-serif;
+  color: #f0f0f0;
+  padding: 1rem 10vw;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  body {
+    padding: 0 5vw;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #2c2c2c;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #4578dd;
+}
+
+body header {
+  padding-top: unset;
+  padding-bottom: unset;
+}
+
+body a,
+body button {
+  cursor: pointer;
+  outline: none;
+  font-family: "Roboto", Courier, monospace, sans-serif;
+}
+
+.main .joke__container {
+  width: 85vw;
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(/assets/gif/robot.gif);
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .main .joke__container {
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.main .joke__container #joke__button {
+  width: 12rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  background: #ff3482;
+  border: none;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0.1rem 0.1rem 1.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0.1rem 0.1rem 1.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0.1rem 0.1rem 1.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0.1rem 0.1rem 1.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .main .joke__container #joke__button {
+    -webkit-box-shadow: 0.1rem 0.1rem 1.5rem 0.5rem rgba(0, 0, 0, 0.5);
+    -ms-box-shadow: 0.1rem 0.1rem 1.5rem 0.5rem rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 0.1rem 0.1rem 1.5rem 0.5rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0.1rem 0.1rem 1.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  }
+}
+
+.main .joke__container #joke__button:hover {
+  -webkit-filter: brightness(95%);
+  -moz-filter: brightness(95%);
+  -ms-filter: brightness(95%);
+  -o-filter: brightness(95%);
+  filter: brightness(95%);
+}
+
+.main .joke__container #joke__button:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.main .joke__container #joke__button:disabled {
+  cursor: default;
+  -webkit-filter: brightness(30%);
+  -moz-filter: brightness(30%);
+  -ms-filter: brightness(30%);
+  -o-filter: brightness(30%);
+  filter: brightness(30%);
+}
+
+/*-------------------- Desktop Menu --------------------*/
+.menu-desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8rem;
+}
+
+.menu-desktop .menu-desktop__logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.menu-desktop .menu-desktop__logo .menu-desktop__logo--icon {
+  margin: auto 0.5rem auto 0;
+  -webkit-filter: brightness(0) invert(1);
+  -moz-filter: brightness(0) invert(1);
+  -ms-filter: brightness(0) invert(1);
+  -o-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+.menu-desktop .menu-desktop__logo .menu-desktop__logo--icon img {
+  width: 50px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .menu-desktop .menu-desktop__logo .menu-desktop__logo--icon img {
+    width: 30px;
+  }
+}
+
+.menu-desktop .menu-desktop__logo .menu-desktop__logo--text {
+  font-family: "Roboto", Courier, monospace, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f0f0f0;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .menu-desktop .menu-desktop__logo .menu-desktop__logo--text {
+    font-size: 1.5rem;
+  }
+}
+
+.menu-desktop .menu-desktop__logo .menu-desktop__logo--text span {
+  color: #4578dd;
+}
+
+.menu-desktop .menu-desktop__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto", Courier, monospace, sans-serif;
+  -webkit-transform: translateX(3rem);
+          transform: translateX(3rem);
+}
+
+.menu-desktop .menu-desktop__links a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .menu-desktop .menu-desktop__links {
+    display: none;
+  }
+}
+
+.menu-desktop .menu-desktop__links .menu-desktop__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 2.5rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-desktop .menu-desktop__links .menu-desktop__link i {
+  margin: 0 0.5rem;
+  font-size: 2rem;
+  -webkit-transition: font-size 0.5s ease-in-out;
+  transition: font-size 0.5s ease-in-out;
+}
+
+.menu-desktop .menu-desktop__links .menu-desktop__link p {
+  /*opacity: 0;*/
+  -webkit-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.menu-desktop .menu-desktop__links .menu-desktop__link:last-of-type {
+  margin-right: 0;
+}
+
+.menu-desktop .menu-desktop__links .menu-desktop__link:hover {
+  /*transform: translateX(-2rem);*/
+  color: #4578dd;
+  /*i {
+               font-size: 1.8rem;
+            }*/
+}
+
+.menu-desktop .menu-desktop__links .menu-desktop__link:hover p {
+  opacity: 1;
+}
+
+/*------------------------ Mobile Menu ------------------------*/
+.menu-mobile {
+  list-style-type: none;
+  z-index: 100;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  padding-top: 35%;
+  background-color: rgba(18, 18, 18, 0.9);
+  margin-left: -10vw;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .menu-mobile {
+    display: none;
+    margin-left: -5vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-mobile {
+    display: none;
+  }
+}
+
+.menu-mobile .menu-mobile__list {
+  list-style-type: none;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.menu-mobile .menu-mobile__list a {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  padding: 3rem 0;
+  color: #f0f0f0;
+  opacity: 0.95;
+}
+
+.menu-mobile .menu-mobile__list a i {
+  margin: 0 0.3rem;
+  font-size: 1.4rem;
+}
+
+.menu-mobile .menu-mobile__list a:hover {
+  background-color: #f0f0f0;
+  color: #121212;
+}
+
+.menu-mobile .menu-mobile__list:last-of-type a:hover {
+  background-color: #121212;
+}
+
+/*------------------------ Mobile Menu Button ------------------------*/
+.menu-mobile__btn {
+  color: #f0f0f0;
+  margin-top: -5%;
+}
+
+@media (min-width: 768px) {
+  .menu-mobile__btn {
+    display: none;
+  }
+}
+
+.menu-mobile__btn .menu-mobile__icon {
+  width: 1.8rem;
+  height: 0.6rem;
+  position: relative;
+  z-index: 300;
+  cursor: pointer;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.menu-mobile__btn .menu-mobile__icon span {
+  display: block;
+  position: absolute;
+  height: 0.2rem;
+  width: 100%;
+  background: #f0f0f0;
+  border-radius: 1rem;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: transform 0.25s ease-in-out;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+.menu-mobile__btn .menu-mobile__icon span:nth-child(1) {
+  top: 0;
+}
+
+.menu-mobile__btn .menu-mobile__icon span:nth-child(2), .menu-mobile__btn .menu-mobile__icon span:nth-child(3) {
+  top: 0.6rem;
+}
+
+.menu-mobile__btn .menu-mobile__icon span:nth-child(4) {
+  top: 1.2rem;
+}
+
+.menu-mobile__btn .menu-mobile__icon.menu-mobile__icon--open span:nth-child(1) {
+  top: 0.6rem;
+  width: 0%;
+  left: 50%;
+}
+
+.menu-mobile__btn .menu-mobile__icon.menu-mobile__icon--open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.menu-mobile__btn .menu-mobile__icon.menu-mobile__icon--open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.menu-mobile__btn .menu-mobile__icon.menu-mobile__icon--open span:nth-child(4) {
+  top: 0.6rem;
+  width: 0%;
+  left: 50%;
+}
+
+/*------------------------ Footer ------------------------*/
+footer {
+  width: 100%;
+}
+
+footer img {
+  margin: 0 0.4rem;
+}
+
+footer p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0.1rem;
+  /*width: 100vw;*/
+  padding: 1rem;
+}
+
+footer p span {
+  color: #4578dd;
+  margin: 0 0.3rem;
+  font-weight: 700;
+}
+/*# sourceMappingURL=styles.css.map */
